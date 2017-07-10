@@ -13,7 +13,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/freshrss
-[![](https://images.microbadger.com/badges/version/lsioarmhf/freshrss.svg)](https://microbadger.com/images/lsioarmhf/freshrss "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/freshrss.svg)](http://microbadger.com/images/lsioarmhf/freshrss "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/freshrss.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/freshrss.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-freshrss)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-freshrss/)
+[![](https://images.microbadger.com/badges/version/lsioarmhf/freshrss.svg)](https://microbadger.com/images/lsioarmhf/freshrss "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/freshrss.svg)](https://microbadger.com/images/lsioarmhf/freshrss "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/freshrss.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/freshrss.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/armhf/armhf-freshrss)](https://ci.linuxserver.io/job/Docker-Builders/job/armhf/job/armhf-freshrss/)
 
 [FreshRSS][appurl] is a free, self-hostable aggregator for rss feeds
 
