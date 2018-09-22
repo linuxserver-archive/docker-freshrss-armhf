@@ -1,7 +1,6 @@
 [linuxserverurl]: https://linuxserver.io
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
-[podcasturl]: https://www.linuxserver.io/podcast/
 [appurl]: https://freshrss.org/
 [hub]: https://hub.docker.com/r/lsioarmhf/freshrss/
 
@@ -10,7 +9,6 @@
 The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
 * [forum.linuxserver.io][forumurl]
 * [IRC][ircurl] on freenode at `#linuxserver.io`
-* [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/freshrss
 [![](https://images.microbadger.com/badges/version/lsioarmhf/freshrss.svg)](https://microbadger.com/images/lsioarmhf/freshrss "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/freshrss.svg)](https://microbadger.com/images/lsioarmhf/freshrss "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/freshrss.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/freshrss.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/armhf/armhf-freshrss)](https://ci.linuxserver.io/job/Docker-Builders/job/armhf/job/armhf-freshrss/)
@@ -61,18 +59,19 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 Create a user and database in your mysql/mariadb server (not root) and then follow the setup wizard in the webui. Use the IP address for "host" of your database server.
 
+It is not required to create a cron job as described [here](https://github.com/FreshRSS/FreshRSS/tree/master/Docker#cron-job-to-automatically-refresh-feeds) because this docker image already includes that.
+
 ## Info
 
-* To monitor the logs of the container in realtime `docker logs -f freshrss`.
+* To monitor the logs of the container in realtime 
 
+`docker logs -f freshrss`.
 * container version number 
 
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' freshrss`
-
 * image version number
 
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/freshrss`
-
 ## Versions
 
 + **05.09.18:** Rebase to alpine 3.8.
